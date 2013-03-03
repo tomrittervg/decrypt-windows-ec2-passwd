@@ -5,9 +5,8 @@ Amazon EC2 Windows Instances require you to paste in your SSH private key to dec
 
 To Use:
 
-1) Select your Windows Instance
-2) Actions -> Get System Log
-   Your full encrypted password will be there, copy it
-3) $ ./decrypt-windows-ec2-passwd.py -p "ercW1ff...9zEw==" -k ~/.ssh/ec2.pem
-
-   Password: y=VhqK;KHS8
+ 1. Select your Windows Instance
+ 2. Actions -> Get System Log
+ 3. Your full encrypted password will be there, copy it
+ 4. $ ./decrypt-windows-ec2-passwd.py -p "ercW1ff...9zEw==" -k ~/.ssh/ec2.pem
+    Password: y=VhqK;KHS8
