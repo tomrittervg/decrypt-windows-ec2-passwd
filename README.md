@@ -1,7 +1,7 @@
 decrypt-windows-ec2-passwd
 ==========================
 
-Amazon EC2 Windows Instances require you to paste in your SSH private key to decrypt the password to the instance. Although they do the decryption locally, in Javascript, I'd still prevent to do it locally... not trusting Amazon.
+Amazon EC2 Windows Instances require you to paste in your SSH private key to decrypt the password to the instance. Although they do the decryption locally, in Javascript, I'd still prefer to do it locally... not trusting Amazon.
 
 To Use:
 
