@@ -23,3 +23,5 @@ $ go run decrypt-windows-ec2-passwd.go ~/.ssh/ec2.pem "ercW1ff...9xEw=="
 Encrypted private key. Please enter passphrase:
 Decrypted password: bG7hKK1Kt;8
 ```
+
+(Full credit to [agl](https://github.com/tomrittervg/decrypt-windows-ec2-passwd/pull/2) for the Go version)
