@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import base64, binascii, optparse, sys
+import base64, binascii, getpass, optparse, sys
 from Crypto.PublicKey import RSA
 
 
@@ -75,8 +75,8 @@ if __name__ == "__main__":
     keyLines = keyFile.readlines()
     #Import it
     try:
-        key = RSA.importKey(keyLines)
-    except:
+        key = RSA.importKey(keyLines, passphrase=getpass.getpass('Encrypted Key Password (leave blank if none): '))
+    except ValueError:
         print "Could not import SSH Key (Is it an RSA key? Is it password protected?)"
         sys.exit(-1)
     #Decrypt it
