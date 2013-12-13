@@ -45,7 +45,7 @@ def decryptPassword(rsaKey, password):
     ciphertext = int(binascii.hexlify(encryptedData), 16)
 
     #Decrypt it
-    plaintext = key.decrypt(ciphertext)
+    plaintext = rsaKey.decrypt(ciphertext)
 
     #This is the annoying part.  long -> byte array
     decryptedData = long_to_bytes(plaintext)
