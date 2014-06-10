@@ -76,8 +76,8 @@ if __name__ == "__main__":
     #Import it
     try:
         key = RSA.importKey(keyLines, passphrase=getpass.getpass('Encrypted Key Password (leave blank if none): '))
-    except ValueError:
-        print "Could not import SSH Key (Is it an RSA key? Is it password protected?)"
+    except ValueError, ex:
+        print "Could not import SSH Key (Is it an RSA key? Is it password protected?): %s" % ex
         sys.exit(-1)
     #Decrypt it
     print ""
