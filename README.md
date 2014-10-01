@@ -40,3 +40,4 @@ Credits:
 * [agl](https://github.com/tomrittervg/decrypt-windows-ec2-passwd/pull/2) for the Go version
 * [marcin](https://github.com/tomrittervg/decrypt-windows-ec2-passwd/pull/3) for making the Python version accept passphrases
 * [ringerc](https://github.com/ringerc) for the shell script
+* [petemounce](https://github.com/petemounce) for the ruby version
