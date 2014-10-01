@@ -1,10 +1,11 @@
 require 'base64'
 require 'openssl'
-require 'trollop'
+require 'pathname'
+require 'trollop' # gem install trollop
 
 opts = Trollop::options do
   opt :key_path, "Path to private key pem file", type: :string
-  opt :password_data, "Base64-encoded password_data as returned by EC2::GetPasswordData operation", type: :string
+  opt :password_data, "Base64-encoded password_data as returned by EC2::GetPasswordData operation (strip newlines)", type: :string
 end
 
 pem_bytes = Pathname.new(opts[:key_path]).read
