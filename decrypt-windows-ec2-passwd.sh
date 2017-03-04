@@ -18,9 +18,9 @@ set -o pipefail
 
 if [ -e "$2" -o "$2" = "-" ]; then
     # file exists, or user specified stdin
-    cat "$2" | base64 -d | openssl rsautl -decrypt -inkey "$1"
+    cat "$2" | base64 --decode | openssl rsautl -decrypt -inkey "$1"
 else
     # No such file and isn't stdin, assume it's base64
-    echo "$2" | base64 -d | openssl rsautl -decrypt -inkey "$1"
+    echo "$2" | base64 --decode | openssl rsautl -decrypt -inkey "$1"
 fi
 echo
