@@ -6,7 +6,7 @@ Amazon EC2 Windows Instances require you to paste in your SSH private key to dec
 To Use:
 
  1. Select your Windows Instance
- 2. Actions -> Get System Log
+ 2. Actions (or left click) > Instance Settings >  Get System Log
  3. Your full encrypted password will be there, copy it
  4. Run It
 
